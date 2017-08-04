@@ -18,9 +18,14 @@ item[data-type="note"] {
         font-style: normal;
     }
     >   run[link] {
-        color: rgb(33, 118, 199);
+        color: #000;
         font-style: normal;
     }
+    > run[tag] {
+    font-style: normal !important;
+    font-weight: normal !important;
+    color: rgb(33, 118, 199);
+ 	}
 }
 
 item[data-type=task] {
@@ -30,7 +35,7 @@ item[data-type=task] {
 }
 
 run[link] {
-  color: rgb(33, 118, 199);
+  color: #000;
   text-decoration: underline;
 }
 
@@ -63,7 +68,7 @@ editor {
 run[tag] {
     font-style: normal !important;
     font-weight: normal !important;
-    color: mix(@text-color, @background-color, 60%);
+    color: rgb(33, 118, 199);
  }
 
 item[data-today], run[tag=data-today] {
@@ -75,11 +80,11 @@ item[data-next], run[tag=data-next] {
 }
 
 item[data-waiting], run[tag=data-waiting] {
-    color: rgb(89, 90, 183);
+    color: #30C95A;
 }
 
 item[data-hold], run[tag=data-hold] {
-    color: rgb(89, 90, 183);
+    color: #30C95A;
 }
 
 item[data-done], run[tag=data-done] {
