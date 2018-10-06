@@ -9,7 +9,7 @@
 // Light Appearance Colors
 @light-text-color: rgb(0, 0, 0);
 @light-background-color: rgb(100%, 100%, 100%);
-@light-guide-line-color-percent: 15%;
+@light-guide-line-color-percent: 12%;
 @light-handle-secondary-color-percent: 20%;
 @light-selection-color-percent: 20%;
 @light-searchbar-background-color: rgb(20%, 20%, 20%);
