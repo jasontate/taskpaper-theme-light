@@ -9,7 +9,7 @@
 // Light Appearance Colors
 @light-text-color: rgb(0, 0, 0);
 @light-background-color: rgb(100%, 100%, 100%);
-@light-guide-line-color-percent: 10%;
+@light-guide-line-color-percent: 15%;
 @light-handle-secondary-color-percent: 20%;
 @light-selection-color-percent: 20%;
 @light-searchbar-background-color: rgb(20%, 20%, 20%);
@@ -39,7 +39,7 @@
 @text-color: @@current-appearance-text-color;
 @background-color: @@current-appearance-background-color;
 @font-family: "Avenir Next";
-@line-height-multiple: 1.3;
+@line-height-multiple: 1.2;
 
 // Handle size
 @handle-size: floor(7 * @ui-scale);
@@ -92,7 +92,50 @@ item[data-type="note"] {
     font-weight: normal !important;
     color: rgb(33, 118, 199);
  	}
- 	line-height-multiple:1.4;
+ 	line-height-multiple:1.2;
+ 	
+}
+
+item[depth="2"][data-type="note"]{
+	font-weight:bold;
+	paragraph-spacing-before: 3;
+	paragraph-spacing-after: 3;
+}
+
+item[depth="3"][data-type="note"] {
+	>   run[content] {
+        font-style: italic;
+    }
+    color: #3a3a3a;
+    font-size: 13px;
+    line-height-multiple:1.1;
+}
+
+item[depth="4"][data-type="note"] {
+	>   run[content] {
+        font-style: italic;
+    }
+    color: #3a3a3a;
+    font-size: 13px;
+    line-height-multiple:1.1;
+}
+
+item[depth="5"][data-type="note"] {
+	>   run[content] {
+        font-style: italic;
+    }
+    color: #3a3a3a;
+    font-size: 13px;
+    line-height-multiple:1.1;
+}
+
+item[depth="6"][data-type="note"] {
+	>   run[content] {
+        font-style: italic;
+    }
+    color: #3a3a3a;
+    font-size: 13px;
+    line-height-multiple:1.1;
 }
 
 run[link^="button"] {
@@ -108,7 +151,7 @@ run[link^="filter"] {
 
 item[data-type="project"] {
     font-size: 15px;
-    font-style: normal !important;
+    font-style: normal;
     font-weight: bold;
     paragraph-spacing-before: 26;
     paragraph-spacing-after: 4;
